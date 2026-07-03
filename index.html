@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BluVoy Travels | Home</title>
+
+    <meta name="description" content="BluVoy Travels - Safe, Comfortable & Affordable Bus Travel">
+    <meta name="keywords" content="Travels, Bus Booking, Tourism, Travel">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                🚌 BluVoy Travels
+            </div>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="overlay">
+
+            <h3>WELCOME TO</h3>
+
+            <h1>BLUVOY TRAVELS</h1>
+
+            <p>
+                Travel Beyond Boundaries With Comfort, Safety &
+                Affordable Prices.
+            </p>
+
+            <button class="btn" onclick="openPopup()">
+                Register Now
+            </button>
+
+            <a href="packages.html" class="btn2">
+                Explore Packages
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Why Choose -->
+    <section class="why">
+
+        <h2>Why Choose BluVoy?</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>🚌 Luxury Coaches</h3>
+                <p>AC Sleeper & Volvo Luxury Buses</p>
+            </div>
+
+            <div class="card">
+                <h3>🛡 Safe Journey</h3>
+                <p>Professional Drivers & GPS Tracking</p>
+            </div>
+
+            <div class="card">
+                <h3>💰 Affordable Prices</h3>
+                <p>Best Packages At Lowest Price</p>
+            </div>
+
+            <div class="card">
+                <h3>📞 24/7 Support</h3>
+                <p>Customer Support Anytime</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+
+        <h2>Our Services</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>🚌 Bus Booking</h3>
+                <p>Book AC Sleeper & Volvo buses across India.</p>
+            </div>
+
+            <div class="card">
+                <h3>🏖 Holiday Packages</h3>
+                <p>Affordable family, honeymoon and group tours.</p>
+            </div>
+
+            <div class="card">
+                <h3>🏨 Hotel Booking</h3>
+                <p>Comfortable hotel stays at top destinations.</p>
+            </div>
+
+            <div class="card">
+                <h3>🛡 Travel Insurance</h3>
+                <p>Safe and secure travel with insurance support.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Destinations -->
+    <section class="destinations">
+
+        <h2>Popular Destinations</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>🏖 Goa</h3>
+                <p>Beach Tours</p>
+            </div>
+
+            <div class="card">
+                <h3>🏔 Ooty</h3>
+                <p>Hill Station Tours</p>
+            </div>
+
+            <div class="card">
+                <h3>🛕 Tirupati</h3>
+                <p>Temple Packages</p>
+            </div>
+
+            <div class="card">
+                <h3>🌴 Kerala</h3>
+                <p>Nature Tours</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews">
+
+        <h2>Customer Reviews</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                ⭐⭐⭐⭐⭐
+                <p>"Excellent service and comfortable buses."</p>
+                <h4>- Rahul</h4>
+            </div>
+
+            <div class="card">
+                ⭐⭐⭐⭐⭐
+                <p>"Affordable packages and friendly staff."</p>
+                <h4>- Priya</h4>
+            </div>
+
+            <div class="card">
+                ⭐⭐⭐⭐⭐
+                <p>"Best travel experience with BluVoy Travels."</p>
+                <h4>- Arjun</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+
+        <h2>Subscribe to Our Newsletter</h2>
+
+        <input type="email" placeholder="Enter your Email">
+
+        <button class="btn">Subscribe</button>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 BluVoy Travels | All Rights Reserved.</p>
+
+    </footer>
+
+    <!-- Register Popup -->
+    <div id="popup" class="popup">
+
+        <div class="popup-content">
+
+            <span class="close" onclick="closePopup()">&times;</span>
+
+            <h2>Register Your Journey</h2>
+
+            <form onsubmit="return bookingSuccess(event)">
+
+                <input type="text" placeholder="Full Name" required>
+
+                <input type="email" placeholder="Email Address" required>
+
+                <input type="tel" placeholder="Phone Number" required>
+
+                <select required>
+                    <option>Select Destination</option>
+                    <option>Goa</option>
+                    <option>Ooty</option>
+                    <option>Kerala</option>
+                    <option>Tirupati</option>
+                </select>
+
+                <input type="date" required>
+
+                <button type="submit" class="btn">
+                    Register Now
+                </button>
+
+                <p id="successMessage" class="success-message">
+                    ✅ Registration Successful! Our team will contact you shortly.
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- Chat Button -->
+    <div class="chat-icon" onclick="toggleChat()">
+        <i class="fa-solid fa-comments"></i>
+    </div>
+
+    <!-- Chat Box -->
+    <div class="chat-box" id="chatBox">
+
+        <div class="chat-header">
+            <i class="fa-solid fa-headset"></i>
+            BluVoy Travels
+            <span onclick="toggleChat()">✖</span>
+        </div>
+
+        <div class="chat-body" id="chatBody">
+            <p><b>👋 BluVoy:</b> Hello! Welcome to BluVoy Travels.</p>
+            <p><b>🤝 BluVoy:</b> How can we help you today?</p>
+        </div>
+
+        <div class="chat-footer">
+
+            <input type="text" id="chatInput" placeholder="Type your message...">
+
+            <button onclick="sendMessage()">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
